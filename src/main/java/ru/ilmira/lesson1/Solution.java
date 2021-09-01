@@ -76,8 +76,8 @@ public class Solution {
 
     }
 
-    public static void swap(Object[] array, int a, int b) {
-        Object tmp = array[a];
+    public static <T> void swap(T[] array, int a, int b) {
+        T tmp = array[a];
         array[a] = array[b];
         array[b] = tmp;
         System.out.println("Результат перестановки: " + Arrays.toString(array));

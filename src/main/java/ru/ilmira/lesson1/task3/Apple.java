@@ -1,6 +1,6 @@
 package ru.ilmira.lesson1.task3;
 
-public final class Apple extends Fruit<Fruit> {
+public final class Apple extends Fruit {
 
     @Override
     public float getWeight() {

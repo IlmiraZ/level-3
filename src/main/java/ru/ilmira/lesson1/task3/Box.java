@@ -3,7 +3,7 @@ package ru.ilmira.lesson1.task3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Box<T extends Fruit<Fruit>> {
+public class Box<T extends Fruit> {
     private final List<T> box = new ArrayList<>();
 
     public List<T> getBox() {
@@ -19,7 +19,7 @@ public class Box<T extends Fruit<Fruit>> {
     }
 
     public boolean compare(Box <?> box) {
-        return getWeight() == box.getWeight();
+        return this.getWeight() == box.getWeight();
     }
 
     public void addFruit(T fruit) {
